@@ -12,7 +12,18 @@ app.get("/", function (req, res) {
 });
 
 app.get("/articles/:articleName", function (req, res) {
-   res.send(req.params.articleName);
+    var fileName = req.params.articleName;
+    var fileContent = fs.readFileSync("articles/" + fileName).toString();
+    var articleTemplate = fs.readFileSync("templates/article.tmpl").toString();
+
+    var fileCreationDate = fs.statSync("articles/" + fileName).birthtime;
+
+    var nameEndIndex = fileName.lastIndexOf(".");
+    var content = articleTemplate.replace(new RegExp("#title#", "g"), fileName.substring(0, nameEndIndex))
+        .replace(new RegExp("#date#", "g"), fileCreationDate)
+        .replace(new RegExp("#content#", "g"), fileContent);
+
+    res.send(content);
 });
 
 /* serves all the static files */
