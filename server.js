@@ -48,12 +48,17 @@ var handleRepeat = function (content, index) {
     var repeatClosed = content.indexOf("#repeatClosed#", repeatOpen);
 
     var repeatableContent = content.substring(closingHash + 1, repeatClosed);
-
     var files = fs.readdirSync(folderName);
 
     var finalContent = "";
     for (var i = 0; i < files.length; ++i) {
-        finalContent += repeatableContent.replace("#title#", files[i]);
+        var tempContent = "";
+        tempContent = repeatableContent.replace("#title#", files[i]);
+        if(tempContent.indexOf("#content#") != -1) {
+            var contentFile = fs.readFileSync(folderName + "/" + files[i]).toString();
+            tempContent = tempContent.replace("#content#", contentFile); 
+        }
+        finalContent += tempContent;
     }
     content = [content.slice(0, repeatOpen), finalContent, content.slice(repeatClosed + 14)].join('');
 
