@@ -11,6 +11,16 @@ app.get("/", function (req, res) {
     });
 });
 
+app.get("/articles/:articleName", function (req, res) {
+   res.send(req.params.articleName);
+});
+
+/* serves all the static files */
+app.get(/^(.+)$/, function (req, res) {
+    console.log('static file request : ' + req.params);
+    res.sendfile(__dirname + req.params[0]);
+});
+
 var parseContent = function (content) {
     content = handleRepeat(content);
     return handleFile(content);
@@ -78,15 +88,8 @@ var handleRepeat = function (content, index) {
     return content;
 };
 
-
-/* serves all the static files */
-app.get(/^(.+)$/, function (req, res) {
-    console.log('static file request : ' + req.params);
-    res.sendfile(__dirname + req.params[0]);
-});
-
-app.listen(80, function () {
-    console.log("Listening on 80");
+app.listen(3000, function () {
+    console.log("Listening on 3000");
 });
 
 

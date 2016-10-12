@@ -3,7 +3,7 @@
   padding-bottom:1.5%;
 }
 
-@media (min-width:100px) and (max-width:800px){
+@media (max-width:1200px){
   body{
     font-family: Consolas;
     padding-top: 2%;
@@ -12,7 +12,7 @@
   }
 }
 
-@media (min-width:801px){
+@media (min-width:1201px){
   body{
     font-family: Consolas;
     padding-top: 2%;
