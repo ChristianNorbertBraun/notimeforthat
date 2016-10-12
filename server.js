@@ -9,19 +9,6 @@ app.get("/", function (req, res) {
         var response = parseContent(content);
         res.send(response);
     });
-
-
-    //    var titles = "";
-    //    fs.readdir("articles", function(err, filenames) {
-    //        if (err) {
-    //            return;
-    //        } else {
-    //            for (var i = 0; i < filenames.length; ++i) {
-    //                titles += "<p>" + filenames[i].replace(".html", "") + "</p>";
-    //            }   
-    //            res.send(titles);
-    //        }
-    //    });
 });
 
 var parseContent = function (content) {
@@ -42,6 +29,11 @@ var handleFile = function (content, index) {
     var fileContent = fs.readFileSync(fileName).toString();
 
     content = [content.slice(0, fileOpen), parseContent(fileContent), content.slice(fileOpen + 7 + fileName.length)].join('');
+    var nameStartindex = fileName.lastIndexOf("/") + 1;
+    var nameEndIndex = fileName.lastIndexOf(".");
+    content = content
+        .replace(new RegExp("#title#", "g"), fileName.substring(nameStartindex, nameEndIndex))
+        .replace(new RegExp("#date#", "g"), fs.statSync(fileName).birthtime);
 
     return content;
 }
@@ -72,9 +64,12 @@ var handleRepeat = function (content, index) {
     for (var i = 0; i < files.length; ++i) {
         var tempContent = "";
         tempContent = repeatableContent.replace(new RegExp("#title#", "g"), files[i]);
-        if(tempContent.indexOf("#content#") != -1) {
+        var creationDate = fs.statSync(folderName + "/" + files[i]).birthtime;
+        console.log(creationDate);
+        tempContent = tempContent.replace(new RegExp("#date#", "g"), creationDate);
+        if (tempContent.indexOf("#content#") != -1) {
             var contentFile = fs.readFileSync(folderName + "/" + files[i]).toString();
-            tempContent = tempContent.replace(new RegExp("#content#", "g"), contentFile); 
+            tempContent = tempContent.replace(new RegExp("#content#", "g"), contentFile);
         }
         finalContent += tempContent;
     }
@@ -87,11 +82,11 @@ var handleRepeat = function (content, index) {
 /* serves all the static files */
 app.get(/^(.+)$/, function (req, res) {
     console.log('static file request : ' + req.params);
-    res.sendfile(__dirname + "/webapp" + req.params[0]);
+    res.sendfile(__dirname + req.params[0]);
 });
 
-app.listen(8080, function () {
-    console.log("Listening on 8080");
+app.listen(80, function () {
+    console.log("Listening on 80");
 });
 
 
