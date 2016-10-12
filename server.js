@@ -25,6 +25,7 @@ app.get("/", function (req, res) {
 });
 
 var parseContent = function (content) {
+    content = handleRepeat(content);
     return handleFile(content);
 };
 
@@ -32,14 +33,15 @@ var handleFile = function (content, index) {
     var fileOpen = content.indexOf("#file/", index);
 
     if (fileOpen == -1) {
-        return;
+        return content;
     }
 
     var closingHash = content.indexOf("#", fileOpen + 1);
+    console.log(content);
     var fileName = content.substring(fileOpen + 6, closingHash);
-    var fileContent = fs.readFileSync(fileName);
+    var fileContent = fs.readFileSync(fileName).toString();
 
-    content = [content.slice(0, fileOpen), fileContent, content.slice(fileOpen + 7 + fileName.length)].join('');
+    content = [content.slice(0, fileOpen), parseContent(fileContent), content.slice(fileOpen + 7 + fileName.length)].join('');
 
     return content;
 }
@@ -49,7 +51,7 @@ var handleRepeat = function (content, index) {
     var repeatOpen = content.indexOf("#repeat/", index);
     // If there is not even a single repeatOpen
     if (repeatOpen == -1) {
-        return;
+        return content;
     }
 
     var closingHash = content.indexOf("#", repeatOpen + 1);
