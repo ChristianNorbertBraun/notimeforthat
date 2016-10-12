@@ -25,8 +25,24 @@ app.get("/", function (req, res) {
 });
 
 var parseContent = function (content) {
-    return handleRepeat(content, 0);
+    return handleFile(content);
 };
+
+var handleFile = function (content, index) {
+    var fileOpen = content.indexOf("#file/", index);
+
+    if (fileOpen == -1) {
+        return;
+    }
+
+    var closingHash = content.indexOf("#", fileOpen + 1);
+    var fileName = content.substring(fileOpen + 6, closingHash);
+    var fileContent = fs.readFileSync(fileName);
+
+    content = [content.slice(0, fileOpen), fileContent, content.slice(fileOpen + 7 + fileName.length)].join('');
+
+    return content;
+}
 
 var handleRepeat = function (content, index) {
 
@@ -53,10 +69,10 @@ var handleRepeat = function (content, index) {
     var finalContent = "";
     for (var i = 0; i < files.length; ++i) {
         var tempContent = "";
-        tempContent = repeatableContent.replace("#title#", files[i]);
+        tempContent = repeatableContent.replace(new RegExp("#title#", "g"), files[i]);
         if(tempContent.indexOf("#content#") != -1) {
             var contentFile = fs.readFileSync(folderName + "/" + files[i]).toString();
-            tempContent = tempContent.replace("#content#", contentFile); 
+            tempContent = tempContent.replace(new RegExp("#content#", "g"), contentFile); 
         }
         finalContent += tempContent;
     }
