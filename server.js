@@ -24,7 +24,6 @@ app.get("/", function (req, res) {
     //    });
 });
 
-
 var parseContent = function (content) {
     return handleRepeat(content, 0);
 };
@@ -50,19 +49,13 @@ var handleRepeat = function (content, index) {
 
     var repeatableContent = content.substring(closingHash + 1, repeatClosed);
 
-    fs.readdir(folderName, function (err, filenames) {
-        if (err) {
-            return;
-        } else {
-            var finalContent = "";
-            for (var i = 0; i < filenames.length; ++i) {
-                finalContent += repeatableContent.replace("#title#", filenames[i]);
-            }
-            content = [content.slice(0, repeatOpen), finalContent, content.slice(repeatClosed + 14)].join('');
+    var files = fs.readdirSync(folderName);
 
-            console.log(content);
-        }
-    });
+    var finalContent = "";
+    for (var i = 0; i < files.length; ++i) {
+        finalContent += repeatableContent.replace("#title#", files[i]);
+    }
+    content = [content.slice(0, repeatOpen), finalContent, content.slice(repeatClosed + 14)].join('');
 
     return content;
 };
@@ -77,3 +70,6 @@ app.get(/^(.+)$/, function (req, res) {
 app.listen(8080, function () {
     console.log("Listening on 8080");
 });
+
+
+module.exports.parseContent = parseContent;
