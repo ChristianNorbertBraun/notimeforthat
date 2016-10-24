@@ -32,4 +32,51 @@
 .content{
   hyphens: auto;
   text-align: justify;
+  float: left;
+}
+
+.overview-link {
+  color: black;
+  text-decoration: none;
+}
+
+.small-img-left {
+  width: 25%;
+  height: auto;  
+  margin-bottom: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
+  float: left;
+}
+
+.small-img-right {
+  width: 25%;
+  height: auto;  
+  margin: 1em;
+  float: right;
+}
+
+figcaption {
+  color: grey;
+}
+
+.medium-img-left {
+  width: 50%;
+  height: auto;
+  margin: 1em;
+  float: left;  
+}
+
+.medium-img-right {
+  width: 50%;
+  height: auto;
+  margin: 1em;
+  float: right;  
+}
+
+.big-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }

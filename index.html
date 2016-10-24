@@ -12,7 +12,13 @@
 <body>
 	<h1 id="logo"> notimeforthat.org</h1>
 	<div class=entryContainer>
-		<hr> #file/articles/Hallo Laura.html#
+
+		#repeat/articles#
+		<hr>
+		<a href="/articles/#title#.html" class="overview-link">	
+		#file/templates/overview.tmpl#
+		</a> 
+		#repeatClosed#
 	</div>
 </body>
 

@@ -52,11 +52,11 @@ var handleFile = function (content, index) {
     content = [content.slice(0, fileOpen), parseContent(fileContent), content.slice(fileOpen + 7 + fileName.length)].join('');
     var nameStartindex = fileName.lastIndexOf("/") + 1;
     var nameEndIndex = fileName.lastIndexOf(".");
-    content = content
-        .replace(new RegExp("#title#", "g"), fileName.substring(nameStartindex, nameEndIndex))
-        .replace(new RegExp("#date#", "g"), fs.statSync(fileName).birthtime);
+    // content = content
+    //     .replace(new RegExp("#title#", "g"), fileName.substring(nameStartindex, nameEndIndex))
+    //     .replace(new RegExp("#date#", "g"), fs.statSync(fileName).birthtime);
 
-    return content;
+    return handleFile(content);
 }
 
 var handleRepeat = function (content, index) {
@@ -79,19 +79,36 @@ var handleRepeat = function (content, index) {
     var repeatClosed = content.indexOf("#repeatClosed#", repeatOpen);
 
     var repeatableContent = content.substring(closingHash + 1, repeatClosed);
+    repeatableContent = handleFile(repeatableContent);
     var files = fs.readdirSync(folderName);
+
+    files.sort(function (a, b) {
+        return fs.statSync(folderName + "/" + b).birthtime -
+            fs.statSync(folderName + "/" + a).birthtime;
+    });
 
     var finalContent = "";
     for (var i = 0; i < files.length; ++i) {
         var tempContent = "";
-        tempContent = repeatableContent.replace(new RegExp("#title#", "g"), files[i]);
+        tempContent = repeatableContent.replace(new RegExp("#title#", "g"), files[i].substring(0, files[i].lastIndexOf(".")));
         var creationDate = fs.statSync(folderName + "/" + files[i]).birthtime;
         console.log(creationDate);
         tempContent = tempContent.replace(new RegExp("#date#", "g"), creationDate);
-        if (tempContent.indexOf("#content#") != -1) {
-            var contentFile = fs.readFileSync(folderName + "/" + files[i]).toString();
-            tempContent = tempContent.replace(new RegExp("#content#", "g"), contentFile);
+        var number = 0;
+        var contentStart = tempContent.indexOf("#content/");
+
+        if (contentStart != -1) {
+            var contentEnd = tempContent.indexOf("#", contentStart + 1);
+            number = parseInt(tempContent.substring(contentStart + 9, contentEnd));
         }
+
+        var contentFile = fs.readFileSync(folderName + "/" + files[i]).toString();
+        if (number == 0) {
+            tempContent = tempContent.replace(new RegExp("#content#", "g"), contentFile);
+        } else if (number > 0) {
+            tempContent = tempContent.replace(new RegExp("#content/" + number + "#", "g"), contentFile.substring(0, number) + "...");
+        }
+
         finalContent += tempContent;
     }
     content = [content.slice(0, repeatOpen), finalContent, content.slice(repeatClosed + 14)].join('');
