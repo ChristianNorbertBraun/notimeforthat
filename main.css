@@ -1,3 +1,15 @@
+a {
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+figcaption {
+ font-family: 'Neuton', serif;
+ font-weight: 400;
+ text-align: center;
+}
+
 #logo{
   text-align: center;
   padding-bottom:1.5%;
@@ -5,7 +17,8 @@
 
 @media (max-width:1200px){
   body{
-    font-family: Consolas;
+    font-family: 'Neuton', serif;
+    font-weight: 200;
     padding-top: 2%;
     padding-left: 10%;
     padding-right: 10%;
@@ -14,7 +27,8 @@
 
 @media (min-width:1201px){
   body{
-    font-family: Consolas;
+    font-family: 'Neuton', serif;
+    font-weight: 200;
     padding-top: 2%;
     padding-left: 22%;
     padding-right: 22%;
