@@ -10,7 +10,6 @@ of forgotten projects. The huge problem I have with this situation is, that I ne
 it would have been worth to spend more time thinking on or even realizing an idea.
 Not mentioning all the fun working on these projects I let slip through my fingers.
 So this blog is how I want to change that!
-[Test](www.google.de)
 
 Obviously there is still no time to realize all the projects, but I want to spent at least
 some thoughts about concepts, possible technology stacks or business models for some of my ideas.
