@@ -1,6 +1,4 @@
-body {
-    margin-left: 20%;
-    margin-right: 20%;
+html {
     font-family: "Lucida Console", Monaco, monospace;
 }
 
@@ -17,4 +15,16 @@ pre {
 a {
     color: #66d693;
     font-weight: bolder;
+}
+
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
 }
