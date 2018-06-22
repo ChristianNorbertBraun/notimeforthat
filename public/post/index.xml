@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on notimeforthat</title>
+    <link>http://notimeforthat.org/post/</link>
+    <description>Recent content in Posts on notimeforthat</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Oct 2016 11:13:59 +0200</lastBuildDate>
+    
+	<atom:link href="http://notimeforthat.org/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Totally got no time for that</title>
+      <link>http://notimeforthat.org/post/firstpost/</link>
+      <pubDate>Mon, 24 Oct 2016 11:13:59 +0200</pubDate>
+      
+      <guid>http://notimeforthat.org/post/firstpost/</guid>
+      <description>I have not enough time. At least not enough time to realize all the ideas I have. And every week or so there are coming new ones joining the others on a huge pile of forgotten projects. The huge problem I have with this situation is, that I never know whether it would have been worth to spend more time thinking on or even realizing an idea. Not mentioning all the fun working on these projects I let slip through my fingers.</description>
+    </item>
+    
+  </channel>
+</rss>

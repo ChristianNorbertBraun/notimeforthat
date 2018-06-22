@@ -51,16 +51,13 @@
             var monatsgehalt = document.getElementById("Monatsgehalt");
             var stundengehalt = document.getElementById("Stundengehalt");
             var wochenstunden = document.getElementById("Wochenstunden");
-
             var table = document.getElementById("Gehaltstabelle");
-
             var addTableRow = function() {
                 var tr = document.createElement("TR");
                 var year = document.createElement("TD");
                 var month = document.createElement("TD");
                 var hour = document.createElement("TD");
                 var workHours = document.createElement("TD");
-
                 year.appendChild(document.createTextNode(jahresgehalt.value));
                 tr.appendChild(year);
                 month.appendChild(document.createTextNode(monatsgehalt.value));
@@ -69,7 +66,6 @@
                 tr.appendChild(hour);
                 workHours.appendChild(document.createTextNode(wochenstunden.value));
                 tr.appendChild(workHours);
-
                 table.appendChild(tr);         
             }
             var calculate = function() {
@@ -83,16 +79,13 @@
                     monatsgehalt.value = Math.round(stundengehalt.value * wochenstunden.value * 4 * 100) / 100;
                     jahresgehalt.value = Math.round(monatsgehalt.value * 12 * 100) / 100;
                 }
-
                 addTableRow();
             };
-
             var reset = function() {
                 jahresgehalt.value = 0;
                 monatsgehalt.value = 0;
                 stundengehalt.value = 0;
             }
-
             document.getElementById("Calculator").onclick = calculate;
             document.getElementById("Reseter").onclick = reset;
         </script>

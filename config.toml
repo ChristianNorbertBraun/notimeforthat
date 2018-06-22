@@ -1,0 +1,4 @@
+baseURL = "http://notimeforthat.org"
+languageCode = "en-us"
+title = "notimeforthat"
+theme = "notimeforthat"

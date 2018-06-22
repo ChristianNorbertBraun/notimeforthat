@@ -1,0 +1,8 @@
+{{define "main"}}
+{{range .Data.Pages}}
+<h1 class="centered">{{.Title}}</h1>
+<div class="centered">{{.Date}}</div>
+<div class="centered">{{div .FuzzyWordCount 150}} minute read</div>
+<div>{{.Content}}</div>
+{{end}}
+{{end}}
