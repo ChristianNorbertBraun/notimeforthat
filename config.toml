@@ -2,3 +2,7 @@ baseURL = "http://notimeforthat.org"
 languageCode = "en-us"
 title = "notimeforthat"
 theme = "notimeforthat"
+
+[params]
+  github = "https://github.com/ChristianNorbertBraun"
+  twitter = "https://twitter.com/NorbiBraun"

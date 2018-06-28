@@ -28,3 +28,14 @@ body {
         margin-right: 20%;
     }
 }
+
+#link-container {
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    max-width: 2em;
+    max-height: 2em;
+    margin: 0.2em;
+}

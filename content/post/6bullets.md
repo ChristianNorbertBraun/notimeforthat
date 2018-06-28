@@ -19,6 +19,16 @@ Every possible target has a brief description. Just enough to not forget what it
 ### 1. Learning the spanish language
 I already had a spanish course in college but stopped visiting classes after the second lecture. But still, spanish is one of the most spoken languages in the world. It would be great to speak spanish just good enough to make oneself understood. This means having a conversation about the weather, asking for directions or reading a spanish newspaper should be possible without to much of a hussle. Speaking another language that german and englisch could reduce my travel shyness and open new travel destinations. It is also proven that [learning a new language has a positive impact on your brain][3]. 
 
+### 2. Programming a 2D game
+
+### 3. Bringing an app into the App Store
+
+### 4. Making music with my band
+
+### 5. Try to create an internet presence
+
+### 6. Give a talk to strangers
+
 
 [1]: https://tim.blog/2018/02/02/the-4-hour-workweek-revisited/
 [2]: https://www.amazon.de/4-Hour-Work-Week-Escape-Anywhere/dp/0091929113/ref=sr_1_1?ie=UTF8&qid=1530159808&sr=8-1&keywords=4+hour+workweek
