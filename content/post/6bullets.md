@@ -23,20 +23,35 @@ I already had a spanish course in college but stopped visiting classes after the
 When I graduated I really wanted to make a game. Back then I had no idea what a task it is to create even a simple 2D side scroller. Since then I never really made an effort to create my own game. I only participated in [Ludum Dare][4] once. [This][5] was my entry. 
 
 But as my employer recently hosted a hackathon and I was partially in charge of the organization the topic became naturally some kind of game programming.
-The attendees had to write algorithms to control a bot on a 2D grid and make it solve puzzles, such as finding the exit or destroying as much competitors as possible. To keep the interface simple we decided to display the map as simple ascii characters. Since ascii characters do not make a really beautiful visualization of a game on their own it was my task to make it look better somehow. So I created a [visualization][6] that uses WebGL to draw an actual pixel tile for every ascii character. In the beginning I had problems to get familiar to WebGL but I had some helping hands by one of my colleagues (who by the way wrote the [game server][7] for the hackathon).
+The attendees had to write algorithms to control a bot on a 2D grid and make it solve puzzles, such as finding the exit or destroying as much competitors as possible. To keep the interface simple we decided to display the map as simple ascii characters. Since ascii characters do not make a really beautiful visualization of a game on their own it was my task to make it look better. So I created a [visualization][6] that uses WebGL to draw an actual pixel tile for every ascii character. In the beginning I had problems to get familiar to WebGL but I had some helping hands by one of my colleagues (who by the way wrote the [game server][7] for the hackathon).
 But as I proceeded it became more and more fun and my long drowsing wish to create my own game reignited.
 
-### 3. Bringing an app into the App Store
+So this is where this target comes from. I have a lot of potential game ideas but I want to focus on a single one. My most favourite game of all time is probably World of Warcraft(WoW). I played it alot when I was in high school and have some great memories of this time. The part of the game which thrilled me the most was Player vs. Player(PvP). So my game should also be a pure PvP game where enter the arena and fight with a partner against one or more opposing teams. For the setting I have three possible topics. The first is fantasy like in Wow itself. The second one is some kind of gladiator fights inspired by the tv series [Spartacus][8]. And last but not least an archangel inspired setting with protagonists seen in the tv series [Lucifer][9].
 
-### 4. Making music with my band
+The benefits of creating a game would be an improved knowledge in graphic programming which coincidentally is somehow helpfull for my work at my employer. It is also a chance to improve my design work. I really enjoy creating visuals and would love to make tangible progress.
 
-### 5. Really learning the piano
+But this target can also be really time consuming. Right now I'm not sure if I would use an existong engine or try to write my own. So developing this game vould devour to much time and reduce the changes to reach my other targets.
 
-### 6. Try to create an internet presence
+### 3. Making music with my band
+I'm a member of a band called [The Pale Ales][10]. I do not even remember how long we already exist but this band and my bandmates accompany my life for quite some time. Even if we are covering songs most of the time I'm really proud of the way we arrange songs and make them sound completly different then the original track. So why is *Making music with my band* a target if it actually exists already? Our music ensemble suffers of two major problems. First nearly all of our bandmates are living in different citys within germany so it's pretty hard to find a date where all of us are free and can meet up. Second and more important the tasks for arranging and practicing a new song are not evenly spread accross all members of the band. We all are really good friends and really make an effort to make this band work but most of the work is actually done by only 3 people. I would not number myself among these 3 people. And this is what this target is all about.
 
-### 7. Give a talk to strangers
+I would like to get more active within my band. Composing new songs organizing gigs and simply be more willing to take action. Therefore I have to get better at any of the following instruments: guitar, piano, violine or the cajone. I also have to do more work alone to make our rehearsals more productive. 
+Making music is a long lasting passion for me and there is nothing more fun then sharing this passion with my bandmates. This target would also improve friendship and my instrumental skills overall.
 
-### 8. Making an effort to handle my finances
+### 4. Really learning the piano
+* Got an e piano
+* Have to play piano in my band
+* tought myself guitar and have some issues with grips
+* Learning from an actual teacher might help me with this matter
+* Piano is good to arrange music, play multiple soundtracks at once
+* can use it as a midicontroller and make different sound
+
+### 5. Try to create an internet presence
+* Steipete Talk
+
+### 6. Give a talk to strangers
+
+### 7. Making an effort to handle my finances
 
 
 [1]: https://tim.blog/2018/02/02/the-4-hour-workweek-revisited/
@@ -46,3 +61,6 @@ But as I proceeded it became more and more fun and my long drowsing wish to crea
 [5]: http://notimeforthat.org/LudumDare34/
 [6]: https://github.com/ChristianNorbertBraun/bots_replay
 [7]: https://github.com/markusfisch/bots
+[8]: https://en.wikipedia.org/wiki/Spartacus_(TV_series)
+[9]: https://en.wikipedia.org/wiki/Lucifer_(TV_series)
+[10]: http://thepaleales.com/
