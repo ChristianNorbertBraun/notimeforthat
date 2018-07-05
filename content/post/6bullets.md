@@ -33,21 +33,23 @@ The benefits of creating a game would be an improved knowledge in graphic progra
 But this target can also be really time consuming. Right now I'm not sure if I would use an existong engine or try to write my own. So developing this game vould devour to much time and reduce the changes to reach my other targets.
 
 ### 3. Making music with my band
-I'm a member of a band called [The Pale Ales][10]. I do not even remember how long we already exist but this band and my bandmates accompany my life for quite some time. Even if we are covering songs most of the time I'm really proud of the way we arrange songs and make them sound completly different then the original track. So why is *Making music with my band* a target if it actually exists already? Our music ensemble suffers of two major problems. First nearly all of our bandmates are living in different citys within germany so it's pretty hard to find a date where all of us are free and can meet up. Second and more important the tasks for arranging and practicing a new song are not evenly spread accross all members of the band. We all are really good friends and really make an effort to make this band work but most of the work is actually done by only 3 people. I would not number myself among these 3 people. And this is what this target is all about.
+I'm a member of a band called [The Pale Ales][10]. I do not even remember how long we already exist but this band and my bandmates accompany my life for quite some time. Even if we are covering songs most of the time I'm really proud of the way we arrange songs and make them sound completly different then the original track. So why is ***Making music with my band*** a target if it actually exists already? Our music ensemble suffers of two major problems. First nearly all of our bandmates are living in different citys within germany so it's pretty hard to find a date where all of us are free and can meet up. Second and more important the tasks for arranging and practicing a new song are not evenly spread accross all members of the band. We all are really good friends and really make an effort to make this band work but most of the work is actually done by only 3 people. I would not number myself among these 3 people. And this is what this target is all about.
 
 I would like to get more active within my band. Composing new songs organizing gigs and simply be more willing to take action. Therefore I have to get better at any of the following instruments: guitar, piano, violine or the cajone. I also have to do more work alone to make our rehearsals more productive. 
 Making music is a long lasting passion for me and there is nothing more fun then sharing this passion with my bandmates. This target would also improve friendship and my instrumental skills overall.
 
 ### 4. Really learning the piano
-* Got an e piano
-* Have to play piano in my band
-* tought myself guitar and have some issues with grips
-* Learning from an actual teacher might help me with this matter
-* Piano is good to arrange music, play multiple soundtracks at once
-* can use it as a midicontroller and make different sound
+Recently I've got an electric piano. It was a wish of mine for my birthday and successful graduation which my mother happily fullfilled (Tank you mom). I wanted this piano in the first place because I often have to play a keyboard instrument for my band so I thought it would be nice to practice a bit. By now I can only play chords along a few songs such as Hallelujah by Leonard Cohen or Happier by Ed Sheeran. So this takes mostly the same path as my guitar skills. I teached myself to play the guitar in a really basic manner and never got good at the more advanced techniques like picking or playing extensive baree chords. 
+It would be a shame if I would do the same with my piano. This is why I'm thinking of taking actual piano lessons. Which kind of lessons is not determined by now but it could be anything from classical to jazz piano.
+
+Playing the piano professionally would improve my understanding of the way music is played and arranged. As you can play multiple tracks simultaniously the piano is great for creating new melodies and supporting parts. Plugin the electric piano into my computer I can also use the keyboard as any instrument I can imagine using the midi controller. This target could be important for my own musical development as it could be suportive for my target ***Making music with my band***. 
 
 ### 5. Try to create an internet presence
-* Steipete Talk
+This target is somehow already in progress as I'm writing this blog post. But I'm still not sure where I wan't to go or what I expect from this. So mostly I want to write for myself as I'm becoming older and gain more experience as a developer. You can think of it as some kind of diary. But also I would like to share and discuss my thoughts with others. I really like to be publicly about what I'm doing and I like to be in a conversation with people. Somehow this has been always easier if you have something to tell about yourself. 
+
+This is not my first time creating something in the internet. Back when I was in highschool I started together with my classmate Thomas a game and tool blog called gogools – fun fact my mother thought I would do something nasty as she associated go-go dancing with the site title. Actually we were writing about our favourite tools to record and edit videos on windows and our most beloved video games. It didn't take long that some other classmates asked if they could participate and write some articles aswell. This felt really great! Even if only one of these people actually sent in an article it was still awesome to know that people read our stuff and liked what we were doing. The euphoria did last about a year before we stopped writing for our blog.
+
+It was time to play around with a different kind of media, video.
 
 ### 6. Give a talk to strangers
 
