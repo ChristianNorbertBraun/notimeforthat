@@ -55,6 +55,7 @@ Now that I'm done studying I feel the urge to do something creative again. I kno
 I expect this project to be a creative balance to my day to day job. Furthermore shooting and editing videos gave me a blast in the past so I'm quite sure that it would enrich my life again. This target would also improve my visibility on the employment market as it is welcomed to be active in the developer community and to prove oneselfs market value.
 
 ### 6. Give a talk to strangers
+Since highschool I enjoyed giving talks to my classmates. It was nice to prepare something and think of the most easiest way to approach a problem and explain it to others. But even when I did quite some presentations in college there is still a difference from giving a talk to classmates or on a conference to strangers and grown developers. At least I think there is. In all of my life I only presented in front of people I remotely know or people who work in a somehow different domain then I do. 
 
 ### 7. Making an effort to handle my finances
 
