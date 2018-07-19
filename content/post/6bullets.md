@@ -1,7 +1,7 @@
 ---
 title: "6 Bullets"
 date: 2018-07-10T06:17:56+02:00
-draft: true
+draft: false
 ---
 
 Recently I listened to a [podcast][1] of the Tim Ferris Show. In about an hour of
