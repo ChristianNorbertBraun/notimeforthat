@@ -1,0 +1,3 @@
+[submodule "static/LudumDare34"]
+	path = static/LudumDare34
+	url = git@github.com:ChristianNorbertBraun/LudumDare34.git
