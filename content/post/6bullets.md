@@ -2,8 +2,6 @@
 title: 6 Bullets
 date: 2018-07-10T04:17:56.000Z
 ---
-Just a minor change
-
 Recently I listened to a [podcast](https://tim.blog/2018/02/02/the-4-hour-workweek-revisited/) of the Tim Ferris Show. In about an hour of
 talking Tim revisits his book [The 4-Hour Work Week](https://www.amazon.de/4-Hour-Work-Week-Escape-Anywhere/dp/0091929113/ref=sr_1_1?ie=UTF8&qid=1530159808&sr=8-1&keywords=4+hour+workweek). To be honest I never read his book but there was some advice in this podcast episode which got stuck in my head.
 Tim admits that he was also getting lost within all his side projects and organizing his life. So a good friend of him suggested that he should try a thought exercise. This goes as the following.
@@ -36,7 +34,7 @@ But this target can also be really time consuming. Right now I'm not sure if I w
 
 ### 3. Making music with my band
 
-I'm a member of a band called [The Pale Ales](http://thepaleales.com/). I do not even remember how long we already exist but this band and my bandmates accompany my life for quite some time. Even if we are covering songs most of the time I'm really proud of the way we arrange songs and make them sound completely different then the original. So why is _**Making music with my band**_ a target if it actually exists already? Our music ensemble suffers of two major problems. First nearly all of our bandmates are living in different cities within Germany so it's pretty hard to find a date where all of us are free and can meet up. Second and more important the tasks for arranging and practicing a new song are not evenly spread accross all members of the band. We all are really good friends and really make an effort to make this band work but most of the workload is actually done by only 3 people. I would not number myself among these 3 people. And this is what this target is all about.
+I'm a member of a band called [The Pale Ales](http://thepaleales.com/). I do not even remember how long we already exist but this band and my bandmates accompany my life for quite some time. Even if we are covering songs most of the time I'm really proud of the way we arrange songs and make them sound completely different then the original. So why is **_Making music with my band_** a target if it actually exists already? Our music ensemble suffers of two major problems. First nearly all of our bandmates are living in different cities within Germany so it's pretty hard to find a date where all of us are free and can meet up. Second and more important the tasks for arranging and practicing a new song are not evenly spread accross all members of the band. We all are really good friends and really make an effort to make this band work but most of the workload is actually done by only 3 people. I would not number myself among these 3 people. And this is what this target is all about.
 
 I would like to get more active within my band. Composing new songs organizing gigs and simply be more willing to take action. Therefore, I have to get better at any of the following instruments: guitar, piano, violin or the cajone. I also have to do more work alone to make our rehearsals more productive. 
 Making music is a longlasting passion for me and there is nothing more fun then sharing this passion with my bandmates. This target would also improve the friendship with my bandmates and my instrumental skills overall.
@@ -46,7 +44,7 @@ Making music is a longlasting passion for me and there is nothing more fun then 
 Recently I've got an electric piano. It was a wish of mine for my birthday and successful graduation which my mother happily fullfilled (Thank you mom). I wanted this piano in the first place because I often have to play a keyboard instrument for my band so I thought it would be nice to practice a bit. By now I can only play chords along a few songs such as Hallelujah by Leonard Cohen or Happier by Ed Sheeran. So this takes mostly the same path as my guitar skills. I taught myself to play the guitar in a really basic manner and never got good at the more advanced techniques like picking or playing extensive barre chords. 
 It would be a shame if I would do the same with the piano. This is why I'm thinking of taking actual piano lessons. Which kind of lessons is not determined by now but it could be anything from classical to jazz piano.
 
-Playing the piano professionally would improve my understanding of the way music is played and arranged. As you can play multiple tracks simultaneously the piano is great for creating new melodies and supporting parts. Plugin the electric piano into my computer I can also use the keyboard as any instrument I can imagine using the midi controller. This target could be important for my own musical development as it could be supportive for my target _**Making music with my band**_. 
+Playing the piano professionally would improve my understanding of the way music is played and arranged. As you can play multiple tracks simultaneously the piano is great for creating new melodies and supporting parts. Plugin the electric piano into my computer I can also use the keyboard as any instrument I can imagine using the midi controller. This target could be important for my own musical development as it could be supportive for my target **_Making music with my band_**. 
 
 ### 5. Give a talk to strangers
 
