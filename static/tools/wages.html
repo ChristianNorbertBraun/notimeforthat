@@ -34,6 +34,9 @@
     <label for="Wochenstunden">Wochenstunden</label>
     <input type="number" id="Wochenstunden" value="40">
 
+    <label for="Abgaben">Abgaben in %</label>
+    <input type="number" id="Abgaben" value="41">
+
     <button type="submit" id="Calculator">Berechnen</button>
     <button type="submit" id="Reseter">Reset</button>
 
@@ -47,48 +50,50 @@
     </table>
 
     <script>
-            var jahresgehalt = document.getElementById("Jahresgehalt");
-            var monatsgehalt = document.getElementById("Monatsgehalt");
-            var stundengehalt = document.getElementById("Stundengehalt");
-            var wochenstunden = document.getElementById("Wochenstunden");
-            var table = document.getElementById("Gehaltstabelle");
-            var addTableRow = function() {
-                var tr = document.createElement("TR");
-                var year = document.createElement("TD");
-                var month = document.createElement("TD");
-                var hour = document.createElement("TD");
-                var workHours = document.createElement("TD");
-                year.appendChild(document.createTextNode(jahresgehalt.value));
-                tr.appendChild(year);
-                month.appendChild(document.createTextNode(monatsgehalt.value));
-                tr.appendChild(month);
-                hour.appendChild(document.createTextNode(stundengehalt.value));
-                tr.appendChild(hour);
-                workHours.appendChild(document.createTextNode(wochenstunden.value));
-                tr.appendChild(workHours);
-                table.appendChild(tr);         
+        var jahresgehalt = document.getElementById("Jahresgehalt");
+        var monatsgehalt = document.getElementById("Monatsgehalt");
+        var stundengehalt = document.getElementById("Stundengehalt");
+        var wochenstunden = document.getElementById("Wochenstunden");
+        var abgaben = document.getElementById("Abgaben");
+        var table = document.getElementById("Gehaltstabelle");
+        var addTableRow = function() {
+            var tr = document.createElement("TR");
+            var year = document.createElement("TD");
+            var month = document.createElement("TD");
+            var hour = document.createElement("TD");
+            var workHours = document.createElement("TD");
+            year.appendChild(document.createTextNode(jahresgehalt.value));
+            tr.appendChild(year);
+            month.appendChild(document.createTextNode(monatsgehalt.value));
+            tr.appendChild(month);
+            hour.appendChild(document.createTextNode(stundengehalt.value));
+            tr.appendChild(hour);
+            workHours.appendChild(document.createTextNode(wochenstunden.value));
+            tr.appendChild(workHours);
+            table.appendChild(tr);
+        }
+        var calculate = function() {
+            var abgabenProzent = (100 - abgaben.value) / 100
+            if (jahresgehalt.value != 0) {
+                monatsgehalt.value = Math.round(jahresgehalt.value / 12 * 100 * abgabenProzent) / 100;
+                stundengehalt.value = Math.round(monatsgehalt.value / 4 / wochenstunden.value * 100) / 100;
+            } else if (monatsgehalt.value != 0) {
+                jahresgehalt.value = Math.round(monatsgehalt.value * 12 * 100 * abgabenProzent) / 100;
+                stundengehalt.value = Math.round(monatsgehalt.value / 4 / wochenstunden.value * 100) / 100;
+            } else if (stundengehalt != 0) {
+                monatsgehalt.value = Math.round(stundengehalt.value * wochenstunden.value * 4 * 100 * abgabenProzent) / 100;
+                jahresgehalt.value = Math.round(monatsgehalt.value * 12 * 100) / 100;
             }
-            var calculate = function() {
-                if(jahresgehalt.value != 0) {
-                    monatsgehalt.value = Math.round(jahresgehalt.value / 12 * 100) / 100;
-                    stundengehalt.value = Math.round(monatsgehalt.value / 4 / wochenstunden.value * 100) / 100;
-                } else if (monatsgehalt.value != 0) {
-                    jahresgehalt.value = Math.round(monatsgehalt.value * 12 * 100) / 100;
-                    stundengehalt.value = Math.round(monatsgehalt.value / 4 / wochenstunden.value * 100) / 100;
-                } else if (stundengehalt != 0) {
-                    monatsgehalt.value = Math.round(stundengehalt.value * wochenstunden.value * 4 * 100) / 100;
-                    jahresgehalt.value = Math.round(monatsgehalt.value * 12 * 100) / 100;
-                }
-                addTableRow();
-            };
-            var reset = function() {
-                jahresgehalt.value = 0;
-                monatsgehalt.value = 0;
-                stundengehalt.value = 0;
-            }
-            document.getElementById("Calculator").onclick = calculate;
-            document.getElementById("Reseter").onclick = reset;
-        </script>
+            addTableRow();
+        };
+        var reset = function() {
+            jahresgehalt.value = 0;
+            monatsgehalt.value = 0;
+            stundengehalt.value = 0;
+        }
+        document.getElementById("Calculator").onclick = calculate;
+        document.getElementById("Reseter").onclick = reset;
+    </script>
 </body>
 
 </html>
